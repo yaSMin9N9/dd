@@ -1,0 +1,73 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        blue_gray: {
+          50: "#edf1f8",
+          500: "#5f7c8d",
+          700: "#235f7f",
+          900: "#222831",
+          "500_63": "#5f7c8d63",
+          "700_02": "#295c7a",
+          "700_01": "#255f7e",
+          "500_8c": "#5f7c8d8c",
+        },
+        black: {
+          900: "#000000",
+          "900_3f": "#0000003f",
+          "900_01": "#070707",
+          "900_11": "#00000011",
+        },
+        gray: {
+          50: "#fafafa",
+          200: "#eeeeee",
+          600: "#727272",
+          700: "#616161",
+          800: "#3a3a38",
+          900: "#191825",
+          "900_19": "#19182519",
+          "600_01": "#777777",
+          "900_01": "#1a1a1a",
+          "900_7f": "#1918257f",
+        },
+        green: { 500: "#4caf50" },
+        teal: { 900: "#022a3a" },
+        deep_orange: {
+          500: "#ff5722",
+          A700: "#e42f07",
+          A400: "#ff3d00",
+          "500_33": "#ff572233",
+        },
+        pink: { 500: "#e51e5a" },
+        red: { A700: "#fb0000" },
+        blue: { 200: "#8ec2f2", 500: "#20a5df", 700: "#1976d2" },
+        amber: { 500: "#ffc107" },
+        white: { A700_01: "#fcfeff", A700_02: "#fffcfc", A700: "#ffffff" },
+      },
+      fontFamily: {
+        dmserifdisplay: "Cairo",
+        abel: "Cairo",
+        istokweb: "Cairo",
+        opensans: "Cairo",
+        martel: "Cairo",
+        ericaone:"Cairo",
+        dmsans: "Cairo",
+        inter: "Cairo"
+      },
+      boxShadow: {
+        bs1: "0px 4px  4px 0px #0000003f",
+        bs: "0px 13px  19px 0px #00000011",
+      },
+      backgroundImage: { gradient: "linear-gradient(270deg ,#255f7e,#255f7e)" },
+      textShadow: { ts: "0px 4px  4px #0000003f" },
+    },
+  },
+  plugins: [require("@tailwindcss/forms"), require("tailwindcss-textshadow")],
+};
